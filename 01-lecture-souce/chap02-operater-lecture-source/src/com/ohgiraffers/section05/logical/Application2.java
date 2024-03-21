@@ -19,6 +19,22 @@ public class Application2 {
         int num2 = 166;
         System.out.println("1부터 100 사이인지 확인 : " + (num2 >= 1 && num2 <= 100));
 
+        /* 2. */
+
+        /* 3. 대소문자와 상관없이 영문자 y인지 확인*/
+        /* 문자변수 == 'y' || 문자변수 =='y' */
+        char ch2 = 'y';
+        System.out.println("영문자 y인지 확인 : " +(ch2 == 'y' || ch2 == 'Y'));
+
+        char ch3 = 'Y';
+        System.out.println("영문자 y인지 확인 : " +(ch3 == 'y' || ch3 == 'Y'));
+
+        /* 4. 영문자인지 확인 */
+        /* A : 63, Z : 90, a : 97, z : 122 (중간의 91~96까지는 영문자가 아님)*/
+
+        char ch5 = 'f';
+        System.out.println("영문자인지 확인 : " +((ch5>='A' && ch5 <= 'Z')||(ch5>='a' && ch5<='z')));
+        System.out.println("영문자인지 확인 : " +((ch5>=65 && ch5 <= 90)||(ch5>=97 && ch5<=122)));
 
     }
 }
